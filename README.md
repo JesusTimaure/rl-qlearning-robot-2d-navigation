@@ -17,7 +17,7 @@ Formed by:
 
 ## Algorithm
 - **Method**: Q-Learning
-- **Update rule**: $`Q(s,a)=r_s'+γ max_a' Q(s',a')`$
+- **Update rule**: $`Q(s_t,a_t )=r_(s_t+1)+γ  max┬(a^' )⁡〖Q(〗 s_(t+1),a^')`$
 
 ## Results
 After training for 20000 episodes, the learned policy converges to an efficient path from A to B.
