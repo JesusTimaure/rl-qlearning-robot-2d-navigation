@@ -11,7 +11,13 @@ Formed by:
  - -0.5 per step
  - -100 for hitting obstacles
 
+<p align="center">
 ![Map5](https://github.com/user-attachments/assets/dedfd0ed-766d-4537-93bf-8c1b177249ac)
+</p>
+
+## Algorithm
+- **Method**: Q-Learning
+- **Update rule**: $`Q(s,a)=r_s'+γ max_a' Q(s',a')`$
 
 ## Results
 After training for 20000 episodes, the learned policy converges to an efficient path from A to B.
