@@ -17,7 +17,13 @@ Formed by:
 
 ## Algorithm
 - **Method**: Q-Learning
-- **Update rule**: $Q(s_t, a_t) = r_{t+1} + \gamma \max_{a'} Q(s_{t+1}, a')$.
+- **Update rule**: $Q(s_t, a_t) = r_{t+1} + \gamma \max_{a'} Q(s_{t+1}, a')$
+- **Exploration stratergy**: ε-greedy. For the agent this means its actions are:
+ - Random with probability ε
+ - The result of maximizing the Q function $\gamma \max_{a} Q(s, a)$ with probability 1-ε
+- **Learning rate**: α = 0.3
+- **Discount factor**: γ = 0.95
+- **Number of steps per episode** = 1000
 
 ## Results
 After training for 20000 episodes, the learned policy converges to an efficient path from A to B.
