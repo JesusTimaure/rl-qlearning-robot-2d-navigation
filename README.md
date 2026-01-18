@@ -10,16 +10,16 @@ Formed by:
  - +200 for reaching the goal
  - -0.5 per step
  - -100 for hitting obstacles
-The robot must be trained to find a policy that ensures a collision-free path from the starting point to the goal point through the use of Q-Learning
+
 ![Map5](https://github.com/user-attachments/assets/dedfd0ed-766d-4537-93bf-8c1b177249ac)
 
 ## Results
 After training for 20000 episodes, the learned policy converges to an efficient path from A to B.
-
 Here we have the optimal policy map
 ![Learned policy (arrows)](https://github.com/user-attachments/assets/808e5385-7eb2-44ca-933c-e79735cd8af4)
 
 Finally there's the robot trajectory from start to goal
+
 https://github.com/user-attachments/assets/afbdaff8-c19a-48c9-872b-3180867c0753
 
 It can also be analized how, as expected, the reward curve increases as the episodes continue, with the rewards decreasing every 5000 episodes since the code boosts ε-greedy exploration at these times to allow the robot to explore again.
