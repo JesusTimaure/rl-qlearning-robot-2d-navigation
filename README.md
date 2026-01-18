@@ -12,7 +12,7 @@ Formed by:
  - -100 for hitting obstacles
 
 <p align="center">
-![Map5](https://github.com/user-attachments/assets/dedfd0ed-766d-4537-93bf-8c1b177249ac)
+![Map5 (1)](https://github.com/user-attachments/assets/37add399-d31f-4fce-ad2c-826f6ecc212b)
 </p>
 
 ## Algorithm
@@ -20,7 +20,7 @@ Formed by:
 - **Update rule**: $Q(s_t, a_t) = r_{t+1} + \gamma \max_{a'} Q(s_{t+1}, a')$
 - **Exploration stratergy**: ε-greedy. For the agent this means its actions are:
  - Random with probability ε
- - The result of maximizing the Q function $\gamma \max_{a} Q(s, a)$ with probability 1-ε
+ - The result of maximizing the Q function $\max_{a} Q(s, a)$ with probability 1-ε
 - **Learning rate**: α = 0.3
 - **Discount factor**: γ = 0.95
 - **Number of steps per episode** = 1000
